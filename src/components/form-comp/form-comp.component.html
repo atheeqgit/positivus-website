@@ -1,0 +1,79 @@
+<div class="container">
+  <div class="form-div d-flex gap-1">
+    <div class="form-area col-12 col-md-6">
+      <form #f="ngForm" class="" (submit)="onSubmit(f)">
+        <div class="select-div d-flex gap-3 mb-3">
+          <div class="d-flex gap-2">
+            <input type="radio" name="" id="" />
+            <label for="" class="text-capitalize fw-semibold">say hi</label>
+          </div>
+          <div class="d-flex gap-2">
+            <input type="radio" name="" id="" />
+            <label for="" class="text-capitalize fw-semibold"
+              >get a quote</label
+            >
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            placeholder="john doe"
+            name="name"
+            ngModel
+            #fname="ngModel"
+            required
+          />
+          <div
+            class="alert alert-danger"
+            *ngIf="fname.touched && fname.invalid"
+          >
+            Name is required
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">email</label>
+          <input
+            type="email"
+            placeholder="johndoe@gamil.com"
+            name="email"
+            ngModel
+            #femail="ngModel"
+            required
+          />
+          <div
+            class="alert alert-danger"
+            *ngIf="femail.touched && femail.invalid"
+          >
+            email is required
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">message</label>
+          <textarea
+            name="message"
+            cols="30"
+            rows="10"
+            placeholder="your message"
+            ngModel
+            #fmessage="ngModel"
+            required
+          ></textarea>
+          <div
+            class="alert alert-danger"
+            *ngIf="fmessage.touched && fmessage.invalid"
+          >
+            message is required
+          </div>
+        </div>
+        <button class="btn-dark">send message</button>
+        <div class="alert alert-danger" *ngIf="f.invalid && f.submitted">
+          All Fields are required
+        </div>
+      </form>
+    </div>
+    <div class="img-div col-6 d-none d-md-block">
+      <img src="../../assets/form-img.png" alt="" />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+nav {
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    h3 {
+      margin: 0;
+    }
+  }
+
+  padding: 1rem 3rem;
+  align-items: center;
+  ul {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    li {
+      a {
+        text-transform: capitalize;
+      }
+    }
+
+    button {
+      margin-left: 1rem;
+    }
+  }
+}

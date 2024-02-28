@@ -1,0 +1,27 @@
+.banner {
+  padding: 3rem 0;
+
+  div {
+    height: 100%;
+
+    img {
+      width: 100%;
+      display: block;
+      margin: auto;
+    }
+  }
+}
+
+.img-showcase {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 3rem;
+  justify-content: space-around;
+
+  div {
+    img {
+      filter: grayscale(10);
+      width: 80%;
+    }
+  }
+}
