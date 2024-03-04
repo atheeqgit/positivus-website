@@ -1,25 +1,35 @@
-<nav class="d-flex flex-row gap-2 justify-content-between">
+<nav class="d-flex flex-column flex-md-row gap-2 justify-content-between">
   <div class="icon">
     <img src="../../assets/Icon.png" alt="" srcset="" />
     <h3 class="fw-medium color-black">POSITIVUS</h3>
   </div>
   <ul class="list-unstyled color-black">
     <li>
-      <a href="" class="fw-medium color-black text-decoration-none">home</a>
+      <a [routerLink]="'/'" class="fw-medium color-black text-decoration-none"
+        >home</a
+      >
     </li>
     <li>
-      <a href="" class="fw-medium color-black text-decoration-none">about</a>
+      <a
+        [routerLink]="'/about'"
+        class="fw-medium color-black text-decoration-none"
+        >about</a
+      >
     </li>
     <li>
-      <a href="" class="fw-medium color-black text-decoration-none">services</a>
+      <a [routerLink]="" class="fw-medium color-black text-decoration-none"
+        >services</a
+      >
     </li>
     <li>
-      <a href="" class="fw-medium color-black text-decoration-none"
+      <a [routerLink]="" class="fw-medium color-black text-decoration-none"
         >use-caese</a
       >
     </li>
     <li>
-      <a href="" class="fw-medium color-black text-decoration-none">blog</a>
+      <a [routerLink]="" class="fw-medium color-black text-decoration-none"
+        >blog</a
+      >
     </li>
     <button class="btn-light">request a quote</button>
   </ul>

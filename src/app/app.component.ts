@@ -5,6 +5,7 @@ import { BannerComponent } from '../components/banner/banner.component';
 import { NavbarComponent } from '../components/navbar/navbar.component';
 import { SevicesCompComponent } from '../components/sevices-comp/sevices-comp.component';
 import { FormCompComponent } from '../components/form-comp/form-comp.component';
+import { AboutComponent } from '../components/about/about.component';
 
 @Component({
   selector: 'app-root',
@@ -17,6 +18,7 @@ import { FormCompComponent } from '../components/form-comp/form-comp.component';
     NavbarComponent,
     SevicesCompComponent,
     FormCompComponent,
+    AboutComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
